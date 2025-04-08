@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <title>Caleb - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-neutral-900 text-neutral-200 font-sans"> 
+        <header class="bg-neutral-900 sticky top-0 z-50 shadow-md">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="#">
+                    <img src="assets/caleb2.png" alt="logo" class="h-12">
+                </a>
+                <nav>
+                    <ul class="flex space-x-6 md:space-x-8 text-sm font-medium">
+                        <li><a href="#hero" class="hover:text-red-500 transition duration-300">HOME</a></li>
+                        <li><a href="#about" class="hover:text-red-500 transition duration-300">ABOUT ME</a></li>
+                        <li><a href="#contact" class="hover:text-red-500 transition duration-300">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="hero" class="container mx-auto px-32 pt-24 flex flex-col md:flex-row items-center gap-12" >
+                <div class="w-1/2 pb-40">
+                    <p class="text-lg text-blue-700 mb-2">
+                        Hello, I am
+                    </p>
+                    <h1 class="text-4xl md:text-6xl font-bold">
+                        Caleb Berandoy
+                    </h1>
+                    <p class="text-lg text-neutral-200 mt-4 mb-8">
+                        An aspiring web developer with a passion for creating user-friendly and visually appealing websites.
+                    </p>
+                    <button class="bg-blue-800 hover:bg-blue-600 py-2 px-4 rounded-xl"><a href="www.linkedin.com/in/caleb-josh-berandoy-544370237">Hire Me</a></button>
+                </div>
+                <div class="w-1/2 flex justify-center justify-end">
+                    <img src="assets/caleb 1.svg" alt="Image of Caleb" class="w-2/3 md:w-full">
+                </div>
+            </section>
+
+            <section id="about" class="bg-neutral-800 py-16 md:py-24"> 
+                <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12"> 
+                    <div class="md:w-1/2 flex justify-center md:justify-end"> 
+                        <img src="assets/profileblue.svg" alt="Image of Caleb" class="w-3/4 md:w-full max-w-sm rounded-lg shadow-xl"> 
+                    </div>
+                    <div class="md:w-1/2 text-center md:text-left"> <p class="text-sm text-blue-700 font-medium mb-1">About Me</p> <h2 class="text-3xl md:text-4xl font-bold text-white mb-6"> Who Am I?
+                        </h2>
+                        <dl class="grid grid-cols-[max-content_1fr] gap-x-4 gap-y-2 text-sm text-neutral-300">
+                            <dt class="font-medium text-neutral-100">Name:</dt>
+                            <dd>Caleb Josh S. Berandoy</dd>
+                            <dt class="font-medium text-neutral-100">Date of Birth:</dt>
+                            <dd>December 13, 2003</dd>
+                            <dt class="font-medium text-neutral-100">Address:</dt>
+                            <dd>Lapu-Lapu City, Central Visayas, Philippines</dd>
+                            <dt class="font-medium text-neutral-100">Email:</dt>
+                            <dd><a href="mailto:calebjosh.berandoy@gmail.com" class="hover:text-red-500">calebjosh.berandoy@gmail.com</a></dd>
+                            <dt class="font-medium text-neutral-100">Phone:</dt>
+                            <dd>+63 961 572 7576</dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="bg-neutral-900 py-16 md:py-24">
+                <div class="container mx-auto px-4 flex flex-col items-center">
+                    <p>Skills</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">
+                        What I Can Do
+                    </h2>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm font-medium">
+                        <li>
+                            <img src="assets/html5.svg" alt="HTML" class="h-8 inline-block mr-2">
+                            HTML
+                        </li>
+                        <li>
+                            <img src="assets/css3.svg" alt="CSS" class="h-8 inline-block mr-2">
+                            CSS
+                        </li>
+                        <li>
+                            <img src="assets/js.svg" alt="JavaScript" class="h-8 inline-block mr-2">
+                            JavaScript
+                        </li>
+                        <li>
+                            <img src="assets/vuejs.svg" alt="Vue JS" class="h-8 inline-block mr-2">
+                            Vue JS
+                        </li>
+                        <li>
+                            <img src="assets/typescript.svg" alt="Typescript" class="h-8 inline-block mr-2">
+                            Typescript
+                        </li>
+                        <li>
+                            <img src="assets/git.svg" alt="Git" class="h-8 inline-block mr-2">
+                            Git
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section id="contact" class="bg-neutral-800 py-16 md:py-24"> <div class="container mx-auto px-4 flex flex-col items-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+                    Contact Me
+                </h2>
+                <div class="text-center max-w-xl">
+                    <p class="text-neutral-300 mb-6">
+                        Interested in working together or have a question? Feel free to reach out!
+                    </p>
+                    <a href="mailto:calebjosh.berandoy@gmail.com" class="btn-primary">Email Me</a>
+                    </div>
+            </div>
+        </section>
+        </main>
+        <footer class="bg-neutral-900 py-8">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-xs text-neutral-500 mt-1">&copy; 2025 Caleb Josh Berandoy.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/cajober" aria-label="GitHub" class="text-neutral-400 hover:text-red-500 transition duration-300"><span class="lucide">GitHub</span></a>
+                    <a href="www.linkedin.com/in/caleb-josh-berandoy-544370237" aria-label="LinkedIn" class="text-neutral-400 hover:text-red-500 transition duration-300"><span class="lucide">LinkedIn</span></a>
+                    </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
