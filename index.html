@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,800,700&display=swap">
     <title>Caleb - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -17,9 +17,13 @@
                 </a>
                 <nav>
                     <ul class="flex space-x-6 md:space-x-8 text-sm font-medium">
-                        <li><a href="#hero" class="hover:text-red-500 transition duration-300">HOME</a></li>
-                        <li><a href="#about" class="hover:text-red-500 transition duration-300">ABOUT ME</a></li>
-                        <li><a href="#contact" class="hover:text-red-500 transition duration-300">CONTACT</a></li>
+                        <li><a href="#hero" class="hover:text-blue-800 transition duration-300">HOME</a></li>
+                        <li><a href="#about" class="hover:text-blue-800 transition duration-300">ABOUT ME</a></li>
+                        <li><a href="#skills" class="hover:text-blue-800 transition duration-300">SKILLS</a></li>
+                        <li><a href="#experience" class="hover:text-blue-800 transition duration-300">EXPERIENCE</a></li>
+                        <li><a href="#projects" class="hover:text-blue-800 transition duration-300">PROJECTS</a></li>
+                        <li><a href="#education" class="hover:text-blue-800 transition duration-300">EDUCATION</a></li>
+                        <li><a href="#contact" class="hover:text-blue-800 transition duration-300">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -49,82 +53,133 @@
                     <div class="md:w-1/2 flex justify-center md:justify-end"> 
                         <img src="assets/profileblue.svg" alt="Image of Caleb" class="w-3/4 md:w-full max-w-sm rounded-lg shadow-xl"> 
                     </div>
-                    <div class="md:w-1/2 text-center md:text-left"> <p class="text-sm text-blue-700 font-medium mb-1">About Me</p> <h2 class="text-3xl md:text-4xl font-bold text-white mb-6"> Who Am I?
+                    <div class="md:w-1/2 text-center md:text-left"> 
+                        <p class="text-sm text-blue-700 font-medium mb-1">
+                            About Me
+                        </p> 
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6"> 
+                            Who Am I?
                         </h2>
-                        <dl class="grid grid-cols-[max-content_1fr] gap-x-4 gap-y-2 text-sm text-neutral-300">
-                            <dt class="font-medium text-neutral-100">Name:</dt>
-                            <dd>Caleb Josh S. Berandoy</dd>
-                            <dt class="font-medium text-neutral-100">Date of Birth:</dt>
-                            <dd>December 13, 2003</dd>
-                            <dt class="font-medium text-neutral-100">Address:</dt>
-                            <dd>Lapu-Lapu City, Central Visayas, Philippines</dd>
-                            <dt class="font-medium text-neutral-100">Email:</dt>
-                            <dd><a href="mailto:calebjosh.berandoy@gmail.com" class="hover:text-red-500">calebjosh.berandoy@gmail.com</a></dd>
-                            <dt class="font-medium text-neutral-100">Phone:</dt>
-                            <dd>+63 961 572 7576</dd>
-                        </dl>
+                        <p class="text-neutral-300 mb-6 pr-32">
+                            Currently, I am in my third year of taking up my Bachelor's degree in Computer Science in the University of the Philippines Cebu. I am a self-taught developer who has worked on small personal projects before.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/cajober" aria-label="GitHub" class="text-neutral-400 hover:text-blue-800 transition duration-300"><span class="lucide">GitHub</span></a>
+                            <a href="www.linkedin.com/in/caleb-josh-berandoy-544370237" aria-label="LinkedIn" class="text-neutral-400 hover:text-blue-800 transition duration-300"><span class="lucide">LinkedIn</span></a>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section id="skills" class="bg-neutral-900 py-16 md:py-24">
                 <div class="container mx-auto px-4 flex flex-col items-center">
-                    <p>Skills</p>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8">
-                        What I Can Do
+                    <p class="text-sm text-blue-700 font-medium mb-2">
+                        Tech Stack
+                    </p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6"> 
+                        What I Can Utilize
                     </h2>
-                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm font-medium">
-                        <li>
-                            <img src="assets/html5.svg" alt="HTML" class="h-8 inline-block mr-2">
-                            HTML
-                        </li>
-                        <li>
-                            <img src="assets/css3.svg" alt="CSS" class="h-8 inline-block mr-2">
-                            CSS
-                        </li>
-                        <li>
-                            <img src="assets/js.svg" alt="JavaScript" class="h-8 inline-block mr-2">
-                            JavaScript
-                        </li>
-                        <li>
-                            <img src="assets/vuejs.svg" alt="Vue JS" class="h-8 inline-block mr-2">
-                            Vue JS
-                        </li>
-                        <li>
-                            <img src="assets/typescript.svg" alt="Typescript" class="h-8 inline-block mr-2">
-                            Typescript
-                        </li>
-                        <li>
-                            <img src="assets/git.svg" alt="Git" class="h-8 inline-block mr-2">
-                            Git
-                        </li>
-                    </ul>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-10 max-w-3xl mx-auto">
+                        <div class="border-2 border-neutral-700 rounded-lg p-8 flex justify-center items-center bg-neutral-800 hover:bg-neutral-700 transition duration-300">
+                            <img src="assets/html5.svg" alt="HTML5 Logo" class="h-16" >
+                        </div>
+                        <div class="border-2 border-neutral-700 rounded-lg p-8 flex justify-center items-center bg-neutral-800 hover:bg-neutral-700 transition duration-300">
+                             <img src="assets/css3.svg" alt="CSS3 Logo" class="h-16">
+                        </div>
+                        <div class="border-2 border-neutral-700 rounded-lg p-8 flex justify-center items-center bg-neutral-800 hover:bg-neutral-700 transition duration-300">
+                             <img src="assets/js.svg" alt="JavaScript Logo" class="h-16">
+                        </div>
+                        <div class="border-2 border-neutral-700 rounded-lg p-8 flex justify-center items-center bg-neutral-800 hover:bg-neutral-700 transition duration-300">
+                             <img src="assets/vuejs.svg" alt="Vue JS Logo" class="h-16">
+                        </div>
+                         <div class="border-2 border-neutral-700 rounded-lg p-8 flex justify-center items-center bg-neutral-800 hover:bg-neutral-700 transition duration-300">
+                             <img src="assets/git.svg" alt="Git Logo" class="h-16">
+                        </div>
+                         <div class="border-2 border-neutral-700 rounded-lg p-8 flex justify-center items-center bg-neutral-800 hover:bg-neutral-700 transition duration-300">
+                             <img src="assets/tailwindcss.svg" alt="Tailwind CSS Logo" class="h-16">
+                        </div>
+                    </div>
                 </div>
-
             </section>
 
-            <section id="contact" class="bg-neutral-800 py-16 md:py-24"> <div class="container mx-auto px-4 flex flex-col items-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
-                    Contact Me
-                </h2>
-                <div class="text-center max-w-xl">
-                    <p class="text-neutral-300 mb-6">
-                        Interested in working together or have a question? Feel free to reach out!
+            <section id="experience" class="bg-neutral-800 py-16 md:py-24">
+                <div class="container mx-auto px-4 flex flex-col items-center">
+                    <p class="text-sm text-blue-700 font-medium mb-8">
+                        Experience
                     </p>
-                    <a href="mailto:calebjosh.berandoy@gmail.com" class="btn-primary">Email Me</a>
+                    
+                    <div class="grid grid-cols-2">
+                        <p class="flex justify-center font-bold">2025</p>
+                        <p class="text-sm text-neutral-300 mb-6 pr-32">
+                            Together with team members from Ctrl Solutions, I started development of 'UPLoad' - a website for the UP Cebu faculty, serving as a platform for uploading accomplishment reports and files, as a fullstack developer utilizing Vue JS and Django as our main tech stack.
+                            <br>
+                            <br>
+                            With the same team, we also started the development of 'Layman's Law', a platform for Filipino people to seek legal advice and assistance from lawyers. For this project, we made use of Next JS and Django for our tech stack.
+                        </p>
                     </div>
-            </div>
-        </section>
+                </div>
+            </section>
+
+            <section id="projects" class="bg-neutral-900 py-16 md:py-24">
+                <div class="container mx-auto px-4 flex flex-col items-center">
+                    <p class="text-sm text-blue-700 font-medium mb-8">
+                        Projects
+                    </p>
+                    <div class="grid grid-cols-2">
+                        <div class="flex flex-col items-center justify-center gap-8">
+                            <img src="assets/upload ss.png" alt="upload" class="rounded-lg w-2/3">
+                            <h2 class="text-lg font-bold">UPLoad</h2>
+                            <p class="text-xs">UPLoad is a report of accomplishment platform for the faculty members of UP Cebu.</p>
+                        </div>
+                        <div class="flex flex-col items-center justify-center gap-8">
+                            <img src="assets/ll ss.png" alt="layman's law" class="rounded-lg w-2/3">
+                            <h2 class="text-lg font-bold">Layman's Law</h2>
+                            <p class="text-xs">Layman's Law is a platform wherein the general Filipino public can ask for legal advice and assistance from willing lawyers.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="bg-neutral-800 py-16 md:py-24">
+                <div class="container mx-auto px-4 flex flex-col items-center">
+                    <p class="text-sm text-blue-700 font-medium mb-8">
+                        Education
+                    </p>
+                    
+                    <div class="grid grid-cols-2">
+                        <p class="flex justify-center font-bold">2016 - 2022</p>
+                        <p class="text-sm text-neutral-300 mb-6 pr-32">
+                            Science and Technology Education Center - Lapu-Lapu City
+                        </p>
+                        <p class="flex justify-center font-bold">2022 - Present</p>
+                        <p class="text-sm text-neutral-300 mb-6 pr-32">
+                            University of the Philippines Cebu
+                            <br>
+                            Bachelor of Science in Computer Science
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="bg-neutral-900 py-16 md:py-24"> 
+                <div class="container mx-auto px-4 flex flex-col items-center">
+                    <h2 class="text-xl md:text-2xl font-bold text-white mb-8 text-center">
+                        Contact Me
+                    </h2>
+                    <div class="text-center max-w-xl">
+                        <p class="text-neutral-300 mb-6">
+                            Interested in working together or have a question? Feel free to reach out!
+                        </p>
+                        <button class="bg-blue-700 hover:bg-blue-600 px-4 py-2 rounded-xl"><a href="mailto:calebjosh.berandoy@gmail.com" class="btn-primary">Email Me</a></button>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="bg-neutral-900 py-8">
-            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row justify-center items-center text-center md:text-left">
                 <div class="mb-4 md:mb-0">
-                    <p class="text-xs text-neutral-500 mt-1">&copy; 2025 Caleb Josh Berandoy.</p>
+                    <p class="text-xs text-neutral-500 mt-1">&copy; 2025 Caleb Josh Berandoy</p>
                 </div>
-                <div class="flex space-x-4">
-                    <a href="https://github.com/cajober" aria-label="GitHub" class="text-neutral-400 hover:text-red-500 transition duration-300"><span class="lucide">GitHub</span></a>
-                    <a href="www.linkedin.com/in/caleb-josh-berandoy-544370237" aria-label="LinkedIn" class="text-neutral-400 hover:text-red-500 transition duration-300"><span class="lucide">LinkedIn</span></a>
-                    </div>
             </div>
         </footer>
     </div>
